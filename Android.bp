@@ -19137,8 +19137,8 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libvideofilmeffect",
-    owner: "infinix",
     allow_undefined_symbols: true,
+    owner: "infinix",
     strip: {
         none: true,
     },
@@ -32543,8 +32543,8 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libsegmention",
-    owner: "infinix",
     allow_undefined_symbols: true,
+    owner: "infinix",
     strip: {
         none: true,
     },
