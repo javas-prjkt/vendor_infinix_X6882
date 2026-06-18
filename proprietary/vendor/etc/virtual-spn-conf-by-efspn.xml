@@ -74,6 +74,7 @@
 <virtualSpnOverride mccmncspn="24801diil" name="diil"/>
 <virtualSpnOverride mccmncspn="24801Telia" name="Telia"/>
 <virtualSpnOverride mccmncspn="24802ZEN" name="ZEN"/>
+<virtualSpnOverride mccmncspn="25019Alfa" name="Alfa"/>
 <virtualSpnOverride mccmncspn="25020ROSTELECOM" name="ROSTELECOM"/>
 <virtualSpnOverride mccmncspn="25020SberMobile" name="SberMobile"/>
 <virtualSpnOverride mccmncspn="25020TTK" name="TTK"/>
@@ -141,6 +142,7 @@
 <virtualSpnOverride mccmncspn="405852VIL" name="VIL"/>
 <virtualSpnOverride mccmncspn="41003Onic" name="Onic"/>
 <virtualSpnOverride mccmncspn="41405U9" name="U9"/>
+<virtualSpnOverride mccmncspn="41405Ooredoo" name="U9"/>
 <virtualSpnOverride mccmncspn="41866Fastlink" name="Fastlink"/>
 <virtualSpnOverride mccmncspn="42402swyp" name="swyp"/>
 <virtualSpnOverride mccmncspn="42402five" name="five"/>
@@ -178,6 +180,7 @@
 <virtualSpnOverride mccmncspn="63903Equitel" name="Equitel"/>
 <virtualSpnOverride mccmncspn="64002TIGO" name="Yas"/>
 <virtualSpnOverride mccmncspn="64002Yas" name="Yas"/>
+<virtualSpnOverride mccmncspn="64002YAS" name="Yas"/>
 <virtualSpnOverride mccmncspn="64003Zantel" name="Yas"/>
 <virtualSpnOverride mccmncspn="65501Mr Price Mobile" name="Mr Price Mobile"/>
 <virtualSpnOverride mccmncspn="65507k&apos;nect mobile" name="k&apos;nect mobile"/>
