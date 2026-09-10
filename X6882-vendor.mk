@@ -1137,7 +1137,7 @@ PRODUCT_PACKAGES += \
     libfgauge_gm30 \
     libfile_op \
     libforkexecwrap \
-    libformatter \
+    libformatter_mtk \
     libged \
     libgf_ca \
     libgf_factory_test \
@@ -1166,6 +1166,7 @@ PRODUCT_PACKAGES += \
     libmipc \
     libmml \
     libmnetlink_v104 \
+    libmnl_mtk \
     libmsbc_mtk \
     libmtk-fusion-ril-prop-vsim \
     libmtk-ril \
@@ -1605,7 +1606,6 @@ PRODUCT_PACKAGES += \
     libitdfacebeauty \
     liblpcnr \
     libmagicsky_64 \
-    libmnl \
     libmorpho_HDSR \
     libmpbase \
     libmsnr \
@@ -2233,7 +2233,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libitdfacebeauty_so \
     vendor_lib64_liblpcnr_so \
     vendor_lib64_libmagicsky_64_so \
-    vendor_lib64_libmnl_so \
     vendor_lib64_libmorpho_HDSR_so \
     vendor_lib64_libmpbase_so \
     vendor_lib64_libmsnr_so \
