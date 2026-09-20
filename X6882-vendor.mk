@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/infinix/X6882
 
 PRODUCT_COPY_FILES += \
+    vendor/infinix/X6882/proprietary/system/etc/public.libraries-mtk.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-mtk.txt \
     vendor/infinix/X6882/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.drbin \
     vendor/infinix/X6882/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.tlbin \
     vendor/infinix/X6882/proprietary/vendor/app/mcRegistry/031c0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/031c0000000000000000000000000000.drbin \
@@ -1190,7 +1191,7 @@ PRODUCT_PACKAGES += \
     libmvpu_runtime_pub \
     libmvpuop_mtk_cv \
     libmvpuop_mtk_nn \
-    libneuron_graph_delegate.mtk \
+    libneuron_graph_delegate.mtk_vendor \
     libnir_neon_driver_ndk.mtk.vndk \
     libnpagent \
     libnpagent_server \
@@ -1210,7 +1211,7 @@ PRODUCT_PACKAGES += \
     libspeechparser_vendor \
     libstorage_otp \
     libsysenv \
-    libtflite_mtk \
+    libtflite_mtk_vendor \
     libtlcWidevineModularDrm \
     libtneclient \
     libtrancamJsonConvertor \
@@ -1709,11 +1710,10 @@ PRODUCT_PACKAGES += \
     s5kjn1ext2_mipi_raw_IdxMgr \
     s5kjn1ext2_mipi_raw_tuning \
     libmtkcam_streaminfo_plugin-p1stt \
-    nfc_nci_nxp_snxxx \
-    vendor.mediatek.hardware.apuware.apusys@2.0 \
-    vendor.mediatek.hardware.apuware.apusys@2.1 \
-    vendor.mediatek.hardware.apuware.hmp@1.0 \
-    vendor.mediatek.hardware.apuware.utils@2.0 \
+    vendor.mediatek.hardware.apuware.apusys@2.0_vendor \
+    vendor.mediatek.hardware.apuware.apusys@2.1_vendor \
+    vendor.mediatek.hardware.apuware.hmp@1.0_vendor \
+    vendor.mediatek.hardware.apuware.utils@2.0_vendor \
     vendor.mediatek.hardware.audio@7.1 \
     vendor.mediatek.hardware.camera.atms@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.0 \
@@ -1770,6 +1770,57 @@ PRODUCT_PACKAGES += \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
+    libapuwareapusys.mtk \
+    libapuwareapusys_v2.mtk \
+    libapuwarehmp.mtk \
+    libapuwareutils.mtk \
+    libapuwareutils_v2.mtk \
+    libapuwarexrp.mtk \
+    libapuwarexrp_v2.mtk \
+    libarmnn_ndk.mtk \
+    libcmdl_ndk.mtk \
+    libmvpu_cic_ci_compiler.mtk \
+    libmvpu_cic_ci_compiler_25.mtk \
+    libmvpu_clc_14_mvpu_debuginfo_25.mtk \
+    libmvpu_clc_14_mvpu_elf_25.mtk \
+    libmvpu_clc_14_mvpu_utility_25.mtk \
+    libmvpu_clc_mvpu_debuginfo.mtk \
+    libmvpu_clc_mvpu_elf.mtk \
+    libmvpu_clc_mvpu_utility.mtk \
+    libmvpu_config.mtk \
+    libmvpu_engine.mtk \
+    libmvpu_engine_25.mtk \
+    libmvpu_engine_25_pub.mtk \
+    libmvpu_engine_pub.mtk \
+    libmvpu_pattern.mtk \
+    libmvpu_pattern_25.mtk \
+    libmvpu_pattern_25_pub.mtk \
+    libmvpu_pattern_pub.mtk \
+    libmvpu_runtime.mtk \
+    libmvpu_runtime_25.mtk \
+    libmvpu_runtime_25_pub.mtk \
+    libmvpu_runtime_builtin.mtk \
+    libmvpu_runtime_builtin_25.mtk \
+    libmvpu_runtime_pub.mtk \
+    libmvpuop25_mtk_cv.mtk \
+    libmvpuop25_mtk_nn.mtk \
+    libmvpuop_mtk_cv.mtk \
+    libmvpuop_mtk_nn.mtk \
+    libneuron_graph_delegate.mtk \
+    libneuronusdk_adapter.mtk \
+    libnir_neon_driver_ndk.mtk \
+    libtflite_mtk.mtk \
+    libtflite_mtk \
+    vendor.mediatek.hardware.apuware.apusys-V3-ndk \
+    vendor.mediatek.hardware.apuware.apusys@1.0 \
+    vendor.mediatek.hardware.apuware.apusys@2.0 \
+    vendor.mediatek.hardware.apuware.apusys@2.1 \
+    vendor.mediatek.hardware.apuware.hmp@1.0 \
+    vendor.mediatek.hardware.apuware.utils-V1-ndk \
+    vendor.mediatek.hardware.apuware.utils@1.0 \
+    vendor.mediatek.hardware.apuware.utils@2.0 \
+    vendor.mediatek.hardware.apuware.xrp@1.0 \
+    vendor.mediatek.hardware.apuware.xrp@2.0 \
     android.hardware.biometrics.fingerprint@2.1-service.xml \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
     android.hardware.security.keymint-service.trustonic.xml \
