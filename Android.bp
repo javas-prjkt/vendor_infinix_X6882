@@ -7,9 +7,41 @@ soong_namespace {
         "device/infinix/X6882",
         "hardware/mediatek",
         "hardware/mediatek/libmtkperf_client",
-        "hardware/transsion",
         "hardware/mediatek/libaedv",
     ],
+}
+
+cc_prebuilt_library_shared {
+    name: "libshowlogo",
+    owner: "infinix",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libshowlogo.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libc",
+                "libstdc++",
+                "libz",
+                "libdrm",
+                "liblog",
+                "libgui",
+                "libui",
+                "libbase",
+                "libSurfaceFlingerProp",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
 }
 
 cc_prebuilt_library_shared {
@@ -15550,7 +15582,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libsfplugin_ccodec_utils",
-                "libstagefright_foundation-v33",
+                "libstagefright_foundation",
                 "libbase",
                 "libcodec2",
                 "libcodec2_vndk",
@@ -15599,7 +15631,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libsfplugin_ccodec_utils",
-                "libstagefright_foundation-v33",
+                "libstagefright_foundation",
                 "libbase",
                 "libcodec2",
                 "libcodec2_vndk",
@@ -35901,6 +35933,7 @@ cc_prebuilt_library_shared {
                 "proprietary/system_ext/lib64/libarmnn_ndk.mtk.so",
             ],
             shared_libs: [
+                "liblog",
                 "libcmdl_ndk.mtk",
                 "libdl",
                 "libm",
@@ -37238,6 +37271,46 @@ prebuilt_etc_xml {
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "kpoc_charger",
+    owner: "infinix",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/bin/kpoc_charger",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libstdc++",
+                "libz",
+                "liblog",
+                "libui",
+                "libdrm",
+                "libhardware_legacy",
+                "libsuspend",
+                "android.hardware.health@2.0",
+                "android.hardware.health-V1-ndk",
+                "libbase",
+                "libbinder",
+                "libbinder_ndk",
+                "libhidlbase",
+                "libhidltransport",
+                "libshowlogo",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
 }
 
 cc_prebuilt_binary {

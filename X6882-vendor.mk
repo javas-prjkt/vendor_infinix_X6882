@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/infinix/X6882
 
 PRODUCT_COPY_FILES += \
+    vendor/infinix/X6882/proprietary/system/etc/init/kpoc_charger.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/kpoc_charger.rc \
     vendor/infinix/X6882/proprietary/system/etc/public.libraries-mtk.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-mtk.txt \
     vendor/infinix/X6882/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.drbin \
     vendor/infinix/X6882/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.tlbin \
@@ -522,6 +523,7 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6882/proprietary/vendor/raw_hdr/params_bin/s5kjn1_17201906_EXPO_BRACKET_HDR_nr.bin:$(TARGET_COPY_OUT_VENDOR)/raw_hdr/params_bin/s5kjn1_17201906_EXPO_BRACKET_HDR_nr.bin
 
 PRODUCT_PACKAGES += \
+    libshowlogo \
     AVCSecureVdecCA_510 \
     HEVCSecureVdecCA_510 \
     VP9SecureVdecCA_510 \
@@ -1838,6 +1840,7 @@ PRODUCT_PACKAGES += \
     manifest_hwcomposer.xml \
     vendor.silead.hardware.fingerprintext@1.0-service.xml \
     vendor.transsion.hardware.trancam.trancamserver@1.0.xml \
+    kpoc_charger \
     ccci_mdinit \
     ccci_rpcd \
     fuelgauged \
